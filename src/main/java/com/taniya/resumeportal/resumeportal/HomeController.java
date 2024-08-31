@@ -60,11 +60,8 @@ List <String> skill= new ArrayList<>();
 
 
      
-@GetMapping("/home")
-public String home() {
-    return "/index";
-}
-@RequestMapping(value="/start", method=RequestMethod.GET)
+
+@RequestMapping(value="/", method=RequestMethod.GET)
        public String populate(Model m) 
        {
        user1.setId(1);
